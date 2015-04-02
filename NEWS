@@ -3,7 +3,7 @@ Known issues: https://github.com/PredictiveEcology/fpCompare/issues
 version 0.1.0
 =============
 * initial version
-* adds new numeric relational operators (with tolerance):
+* adds new numeric relational operators that do comparisons using a tolerance value:
 
     - `%>=%`, `%<=%`, `%==%`, `%!=%`
 
