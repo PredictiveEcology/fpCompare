@@ -1,0 +1,10 @@
+Known issues: https://github.com/achubaty/fpCompare/issues
+
+version 0.1.0
+=============
+* initial version
+* adds new numeric relational operators (with tolerance):
+
+    - `%>=%`, `%<=%`, `%==%`, `%!=%`
+
+* use `options(fpCompare.tolerance = value)` to set tolerance

@@ -1,0 +1,29 @@
+Package: fpCompare
+Type: Package
+Title: Reliable comparison of floating point numbers
+URL: https://github.com/achubaty/fpCompare
+Version: 0.1.0
+Date: 2015-04-02
+Authors@R: c(
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role="cph"),
+    person(c("Alex", "M"), "Chubaty",
+    email="achubaty@NRCan.gc.ca",
+    role=c("aut", "cre"))
+    )
+Description: Computer representation of floating point numbers are problematic
+    due to errors associated with the binary represenation of decimal numbers.
+    Despite being aware of these problems, people still use numerical methods
+    that fail to account for these and other rounding errors (this pitfall is
+    the first to be highlighted in Circle 1 of Burns' [R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)).
+    This package provides four new relational operators useful for performing
+    floating point number comparisons with a set tolerance.
+Depends:
+    R (>= 3.1.2)
+Suggests:
+    knitr,
+    testthat
+License: GPL-3
+VignetteBuilder: knitr
+ByteCompile: yes
+BugReports: https://github.com/achubaty/fpCompare/issues
