@@ -1,6 +1,6 @@
-Master Branch: [![Build Status](https://travis-ci.org/achubaty/fpCompare.svg?branch=master)](https://travis-ci.org/achubaty/fpCompare)
+Master Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master)](https://travis-ci.org/PredictiveEcology/fpCompare)
 
-Development Branch: [![Build Status](https://travis-ci.org/achubaty/fpCompare.svg?branch=development)](https://travis-ci.org/achubaty/fpCompare)
+Development Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=development)](https://travis-ci.org/PredictiveEcology/fpCompare)
 
 -----
 
@@ -42,8 +42,8 @@ From CRAN: (not yet available)
 From GitHub:
 
     library(devtools)
-    install_github("achubaty/fpCompare")
+    install_github("PredictiveEcology/fpCompare")
 
 ### Bug Reports
 
-[https://github.com/achubaty/fpCompare/issues](https://github.com/achubaty/fpCompare)
+[https://github.com/PredictiveEcology/fpCompare/issues](https://github.com/PredictiveEcology/fpCompare)

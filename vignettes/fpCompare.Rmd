@@ -55,6 +55,6 @@ From GitHub:
 
 ## Bug Reports
 
-[https://github.com/achubaty/fpCompare/issues](https://github.com/achubaty/fpCompare)
+[https://github.com/PredictiveEcology/fpCompare/issues](https://github.com/PredictiveEcology/fpCompare)
 
 # References

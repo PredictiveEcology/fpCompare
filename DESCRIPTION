@@ -1,7 +1,7 @@
 Package: fpCompare
 Type: Package
 Title: Reliable comparison of floating point numbers
-URL: https://github.com/achubaty/fpCompare
+URL: https://github.com/PredictiveEcology/fpCompare
 Version: 0.1.0
 Date: 2015-04-02
 Authors@R: c(
@@ -26,4 +26,4 @@ Suggests:
 License: GPL-3
 VignetteBuilder: knitr
 ByteCompile: yes
-BugReports: https://github.com/achubaty/fpCompare/issues
+BugReports: https://github.com/PredictiveEcology/fpCompare/issues
