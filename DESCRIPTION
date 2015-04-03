@@ -11,8 +11,8 @@ Authors@R: c(
     email="achubaty@NRCan.gc.ca",
     role=c("aut", "cre"))
     )
-Description: Computer representation of floating point numbers are problematic
-    due to errors associated with the binary represenation of decimal numbers.
+Description: Comparisons of floating point numbers are problematic due to errors
+    associated with the binary represenation of decimal numbers.
     Despite being aware of these problems, people still use numerical methods
     that fail to account for these and other rounding errors (this pitfall is
     the first to be highlighted in Circle 1 of Burns' [R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)).
