@@ -1,9 +1,9 @@
 Package: fpCompare
 Type: Package
-Title: Reliable comparison of floating point numbers
+Title: Reliable Comparison of Floating Point Numbers
 URL: https://github.com/PredictiveEcology/fpCompare
 Version: 0.1.0
-Date: 2015-04-02
+Date: 2015-04-03
 Authors@R: c(
     person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
     role="cph"),
