@@ -5,6 +5,8 @@
 * Ubuntu 14.04      (local), R 3.1.3
 * Windows 7         (local), R 3.1.2
 * Windows 7         (local), R 3.1.3
+* Windows     (win-builder), R 3.1.3
+* Windows     (win-builder), R 3.2.0 beta
 
 ## R CMD check results
 
@@ -15,7 +17,7 @@ There was 1 NOTE:
 1. This is a new CRAN package submission.
 
         * checking CRAN incoming feasibility ... NOTE
-        Maintainer: ‘Alex M Chubaty <Alexander.Chubaty@NRCan.gc.ca>
+        Maintainer: ‘Alex M Chubaty <achubaty@NRCan.gc.ca>’
         New submission
 
 ## Downstream dependencies
