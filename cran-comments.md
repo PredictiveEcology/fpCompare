@@ -17,7 +17,7 @@ There was 1 NOTE:
 1. This is a new CRAN package submission.
 
         * checking CRAN incoming feasibility ... NOTE
-        Maintainer: ‘Alex M Chubaty <Alexander.Chubaty@NRCan.gc.ca>
+        Maintainer: ‘Alex M Chubaty <achubaty@NRCan.gc.ca>’
         New submission
 
 ## Downstream dependencies
