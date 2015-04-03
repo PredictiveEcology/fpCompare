@@ -35,7 +35,7 @@ These functions use the `base` relational operators to make comparisons, but inc
 
 ### Installation
 
-From CRAN: (not yet available)
+From CRAN:
 
     install.packages("fpCompare")
 
