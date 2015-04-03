@@ -5,6 +5,7 @@
 * Ubuntu 14.04      (local), R 3.1.3
 * Windows 7         (local), R 3.1.2
 * Windows 7         (local), R 3.1.3
+* Windows     (win-builder), R 3.1.3
 
 ## R CMD check results
 
