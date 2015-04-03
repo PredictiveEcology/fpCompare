@@ -20,7 +20,7 @@ bibliography: bibliography.bib
 ---
 
 # Reliable comparison of floating point numbers
-Comparisons of floating point numbers are problematic due to errors associated with the binary represenation of decimal numbers. Computer scientists and programmers are aware of these problems [*.e.g.*, @Goldberg:1991ac] and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in the First Circle of "The R Inferno" [@Burns:2012ri]).
+Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers. Computer scientists and programmers are aware of these problems [*.e.g.*, @Goldberg:1991ac] and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in the First Circle of "The R Inferno" [@Burns:2012ri]).
 
 To avoid these and other numerical rounding issues, R's help file for relational operators (*e.g.*, `?'>'`) suggests using `identical` and `all.equal` when making numerical comparisons:
 

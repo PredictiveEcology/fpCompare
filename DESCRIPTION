@@ -12,7 +12,7 @@ Authors@R: c(
     role=c("aut", "cre"))
     )
 Description: Comparisons of floating point numbers are problematic due to errors
-    associated with the binary represenation of decimal numbers.
+    associated with the binary representation of decimal numbers.
     Despite being aware of these problems, people still use numerical methods
     that fail to account for these and other rounding errors (this pitfall is
     the first to be highlighted in Circle 1 of Burns (2012)

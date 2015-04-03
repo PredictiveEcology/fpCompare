@@ -6,6 +6,7 @@
 * Windows 7         (local), R 3.1.2
 * Windows 7         (local), R 3.1.3
 * Windows     (win-builder), R 3.1.3
+* Windows     (win-builder), R 3.2.0 beta
 
 ## R CMD check results
 
