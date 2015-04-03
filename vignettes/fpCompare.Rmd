@@ -47,6 +47,10 @@ These functions use the `base` relational operators to make comparisons, but lik
 
 ## Installation
 
+From CRAN:
+
+    install.packages("fpCompare")
+
 From GitHub:
 
     library(devtools)
