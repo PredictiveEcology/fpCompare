@@ -10,7 +10,7 @@
 #' \code{fpCompare.tolerance} can be specified via \code{options} to account
 #' for floating point rounding errors.
 #'
-#' Inspired by R FAQ 7.31 \url{http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f}
+#' Inspired by R FAQ 7.31 (\url{http://ow.ly/LiU7K})
 #' and this post (\url{http://stackoverflow.com/a/2769618/1380598}).
 #'
 #' @param x Any numeric object.
