@@ -1,6 +1,6 @@
-Master Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master)](https://travis-ci.org/PredictiveEcology/fpCompare)
+Master Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master)](https://travis-ci.org/PredictiveEcology/fpCompare) [![Coverage Status](https://coveralls.io/repos/PredictiveEcology/fpCompare/badge.svg?branch=master)](https://coveralls.io/r/PredictiveEcology/fpCompare?branch=master)
 
-Development Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=development)](https://travis-ci.org/PredictiveEcology/fpCompare)
+Development Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=development)](https://travis-ci.org/PredictiveEcology/fpCompare) [![Coverage Status](https://coveralls.io/repos/PredictiveEcology/fpCompare/badge.svg?branch=development)](https://coveralls.io/r/PredictiveEcology/fpCompare?branch=development)
 
 -----
 
