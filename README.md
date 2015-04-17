@@ -1,6 +1,6 @@
-Master Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master)](https://travis-ci.org/PredictiveEcology/fpCompare)
+Master Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master)](https://travis-ci.org/PredictiveEcology/fpCompare) [![Coverage Status](https://coveralls.io/repos/PredictiveEcology/fpCompare/badge.svg?branch=master)](https://coveralls.io/r/PredictiveEcology/fpCompare?branch=master)
 
-Development Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=development)](https://travis-ci.org/PredictiveEcology/fpCompare)
+Development Branch: [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=development)](https://travis-ci.org/PredictiveEcology/fpCompare) [![Coverage Status](https://coveralls.io/repos/PredictiveEcology/fpCompare/badge.svg?branch=development)](https://coveralls.io/r/PredictiveEcology/fpCompare?branch=development)
 
 -----
 
@@ -12,10 +12,12 @@ Comparisons of floating point numbers are problematic due to errors associated w
 
 To avoid these and other numerical rounding issues, R's help file for relational operators (*e.g.*, `?'>'`) suggests using `identical` and `all.equal` when making numerical comparisons:
 
-    x1 <- 0.5 - 0.3
-    x2 <- 0.3 - 0.1
-    x1 == x2                           # FALSE on most machines
-    identical(all.equal(x1, x2), TRUE) # TRUE everywhere
+```r
+x1 <- 0.5 - 0.3
+x2 <- 0.3 - 0.1
+x1 == x2                           # FALSE on most machines
+identical(all.equal(x1, x2), TRUE) # TRUE everywhere
+```
 
 Inspired by [R FAQ 7.31](http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f) and [this Stack Overflow answer](http://stackoverflow.com/a/2769618/1380598), this package provides four new relational operators useful for performing floating point number comparisons[^1] with a set tolerance:
 
@@ -26,10 +28,12 @@ Inspired by [R FAQ 7.31](http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_
 
 These functions use the `base` relational operators to make comparisons, but incorporate a tolerance value (`fpCompare.tolerance`) similar to `all.equal`. The default `fpCompare.tolerance` value is `.Machine$double.eps^0.5`, set via `options`. This is the same default used in `all.equal` for numeric comparisons.
 
-    x1 <- 0.5 - 0.3
-    x2 <- 0.3 - 0.1
-    x1 == x2         # FALSE on most machines
-    x1 %==% x2       # TRUE everywhere
+```r
+x1 <- 0.5 - 0.3
+x2 <- 0.3 - 0.1
+x1 == x2         # FALSE on most machines
+x1 %==% x2       # TRUE everywhere
+```
 
 [^1]: The `%<=%` and `%>=%` symbols are used instead of `%<%` and `%>%` to avoid a conflict with `magrittr`'s pipe operator (`%>%`).
 
@@ -37,12 +41,16 @@ These functions use the `base` relational operators to make comparisons, but inc
 
 From CRAN:
 
-    install.packages("fpCompare")
+```r
+install.packages("fpCompare")
+```
 
 From GitHub:
 
-    library(devtools)
-    install_github("PredictiveEcology/fpCompare")
+```r
+library(devtools)
+install_github("PredictiveEcology/fpCompare")
+```
 
 ### Bug Reports
 
