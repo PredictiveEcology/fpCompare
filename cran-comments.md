@@ -23,11 +23,10 @@ There were no ERRORs or WARNINGs
 
 There was 1 NOTE:
 
-1. This is a new CRAN package submission.
+1. This is an update to an existing package.
 
         * checking CRAN incoming feasibility ... NOTE
         Maintainer: ‘Alex M Chubaty <achubaty@NRCan.gc.ca>’
-        New submission
 
 ## Downstream dependencies
 
