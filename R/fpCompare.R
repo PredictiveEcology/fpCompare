@@ -8,9 +8,20 @@
 #'
 #' These are similar to their counterparts in \code{base}, except a tolerance
 #' \code{fpCompare.tolerance} can be specified via \code{options} to account
-#' for floating point rounding errors.
+#' for floating point rounding errors:
 #'
-#' Inspired by R FAQ 7.31 \url{http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f}
+#' \tabular{cc}{
+#'   \code{fpCompare} \tab \code{base}\cr
+#'   ---------------- \tab -----------\cr
+#'   \code{\%>=\%} \tab \code{>=}\cr
+#'   \code{\%>>\%} \tab \code{>}\cr
+#'   \code{\%<=\%} \tab \code{<=}\cr
+#'   \code{\%<<\%} \tab \code{<}\cr
+#'   \code{\%==\%} \tab \code{==}\cr
+#'   \code{\%!=\%} \tab \code{!=}\cr
+#' }
+#'
+#' Inspired by R FAQ 7.31 (\url{http://ow.ly/LiU7K})
 #' and this post (\url{http://stackoverflow.com/a/2769618/1380598}).
 #'
 #' @param x Any numeric object.
@@ -35,9 +46,22 @@
 
 #' @export
 #' @rdname relational-operators
+`%>>%` <- function(x, y) {
+  (x - getOption("fpCompare.tolerance") > y)
+}
+
+#' @export
+#' @rdname relational-operators
 `%<=%` <- function(x, y) {
   (x < y + getOption("fpCompare.tolerance"))
 }
+
+#' @export
+#' @rdname relational-operators
+`%<<%` <- function(x, y) {
+  (x < y - getOption("fpCompare.tolerance"))
+}
+
 
 #' @export
 #' @rdname relational-operators
