@@ -39,7 +39,7 @@ These are similar to their counterparts in \code{base}, except a tolerance
 \code{fpCompare.tolerance} can be specified via \code{options} to account
 for floating point rounding errors:
 
-\tabular{c}{
+\tabular{cc}{
   \code{fpCompare} \tab \code{base}\cr
   ---------------- \tab -----------\cr
   \code{\%>=\%} \tab \code{>=}\cr
