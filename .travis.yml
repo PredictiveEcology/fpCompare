@@ -2,6 +2,10 @@ language: r
 
 sudo: required
 
+apt_packages:
+  - curl
+  - latex-xcolor
+
 r_github_packages:
   - jimhester/covr
 
