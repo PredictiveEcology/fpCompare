@@ -10,6 +10,8 @@ b <- jitter(1:6, 1e-7)
 print(rbind(a,b), digits=16)
 
 b %<=% a
+b %<<% a
 b %>=% a
+b %>>% a
 b %==% a
 b %!=% a

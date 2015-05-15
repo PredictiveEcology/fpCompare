@@ -1,6 +1,6 @@
 Known issues: https://github.com/PredictiveEcology/fpCompare/issues
 
-version 0.1.1
+version 0.2.0
 =============
 * add `%<<%` and `%>>%` operators ('less than'; 'greater than')
 * move `cph` to end of the author field so `aut` displays as first name on CRAN
