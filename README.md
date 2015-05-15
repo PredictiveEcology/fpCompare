@@ -19,39 +19,48 @@ x1 == x2                           # FALSE on most machines
 identical(all.equal(x1, x2), TRUE) # TRUE everywhere
 ```
 
-Inspired by [R FAQ 7.31](http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f) and [this Stack Overflow answer](http://stackoverflow.com/a/2769618/1380598), this package provides four new relational operators useful for performing floating point number comparisons[^1] with a set tolerance:
+Inspired by [R FAQ 7.31](http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f) and [this Stack Overflow answer](http://stackoverflow.com/a/2769618/1380598), this package provides new relational operators useful for performing floating point number comparisons with a set tolerance:
 
-- `%>=%`
-- `%<=%`
-- `%==%`
-- `%!=%`
+**`fpCompare`**[^1] | **`base`**
+--------------------|-----------
+`%>=%`              | `>=`
+`%>>%`              | `>`
+`%<=%`              | `<=`
+`%<<%`              | `<`
+`%==%`              | `==`
+`%!=%`              | `!=`
 
 These functions use the `base` relational operators to make comparisons, but incorporate a tolerance value (`fpCompare.tolerance`) similar to `all.equal`. The default `fpCompare.tolerance` value is `.Machine$double.eps^0.5`, set via `options`. This is the same default used in `all.equal` for numeric comparisons.
 
 ```r
+# set telorance value
+tol = .Machine$double.eps^0.5       # default value
+options(fpCompare.tolerance = tol)
+
+# perform comparisons
 x1 <- 0.5 - 0.3
 x2 <- 0.3 - 0.1
 x1 == x2         # FALSE on most machines
 x1 %==% x2       # TRUE everywhere
 ```
 
-[^1]: The `%<=%` and `%>=%` symbols are used instead of `%<%` and `%>%` to avoid a conflict with `magrittr`'s pipe operator (`%>%`).
+[^1]: The `%<<%` and `%>>%` symbols are used instead of `%<%` and `%>%` to avoid a conflict with `magrittr`'s pipe operator (`%>%`).
 
-### Installation
+# Installation
 
-From CRAN:
+## From CRAN
 
 ```r
 install.packages("fpCompare")
 ```
 
-From GitHub:
+## From GitHub
 
 ```r
 library(devtools)
-install_github("PredictiveEcology/fpCompare")
+install_github("achubaty/fpCompare")
 ```
 
-### Bug Reports
+# Bug Reports
 
-[https://github.com/PredictiveEcology/fpCompare/issues](https://github.com/PredictiveEcology/fpCompare)
+[https://github.com/PredictiveEcology/fpCompare/issues](https://github.com/PredictiveEcology/fpCompare/issues)
