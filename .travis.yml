@@ -2,9 +2,12 @@ language: r
 
 sudo: required
 
+cran: http://cran.rstudio.com/
+
 apt_packages:
   - curl
   - latex-xcolor
+  - libcurl4-openssl-dev
 
 r_github_packages:
   - jimhester/covr
