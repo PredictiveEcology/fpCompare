@@ -1,5 +1,11 @@
 Known issues: https://github.com/PredictiveEcology/fpCompare/issues
 
+version 0.2.1
+=============
+* update maintainer's email address
+* use HTTPS for CRAN urls
+* improved vignette formatting (use `rmarkdown::render`)
+
 version 0.2.0
 =============
 * add `%<<%` and `%>>%` operators ('less than'; 'greater than')

@@ -1,7 +1,7 @@
 ---
-title:  "fpCompare"
+title: "fpCompare"
 author: "Alex M. Chubaty"
-date:   "May 15, 2015"
+date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
   pdf_document:
     number_sections: no
@@ -10,13 +10,13 @@ output:
     number_sections: no
     self_contained: yes
     toc: no
+bibliography: bibliography.bib
 vignette: >
-  %\VignetteEngine{knitr::knitr}
+  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{fpCompare: reliable comparison of floating point numbers}
   %\VignetteDepends{fpCompare}
-  %\VignetteKeyword{}
+  %\VignetteKeyword{floating point numbers, numerical comparisons}
   %\usepackage[utf8]{inputenc}
-bibliography: bibliography.bib
 ---
 
 # Reliable comparison of floating point numbers
