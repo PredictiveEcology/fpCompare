@@ -35,7 +35,7 @@ There was 1 NOTE:
 
 ## Downstream dependencies
 
-Important reverse dependency check notes (full details at 
-https://github.com/PredictiveEcology/fpCompare/revdep/summary.md);
+I have run R CMD check on downstream dependencies of `fpCompare`, and all have passed.
+Summary at https://github.com/PredictiveEcology/fpCompare/blob/master/revdep/summary.md.
 
-* `SpaDES` produces an error due to a non-CRAN package in Suggests. As the maintainer of `SpaDES`, I can confirm this is not a true error.
+* NOTE: `SpaDES` produces an error due to a non-CRAN package in Suggests, but passes once that dependency is installed.

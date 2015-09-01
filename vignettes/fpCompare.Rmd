@@ -1,7 +1,7 @@
 ---
 title: "fpCompare"
 author: "Alex M. Chubaty"
-date: '`r format(Sys.Date(), format="%B %d %Y")`'
+date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
   pdf_document:
     number_sections: no

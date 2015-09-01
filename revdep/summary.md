@@ -40,3 +40,4 @@ DONE
 Status: 1 ERROR
 ```
 
+**Maintainer's note:** R CMD check for `SpaDES` passes after installing missing dependency.
