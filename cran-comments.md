@@ -31,8 +31,13 @@ There was 1 NOTE:
 
 1. Maintainer's email address has changed.
 
-    * checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
+    * checking CRAN incoming feasibility ... NOTE
     Maintainer: 'Alex M Chubaty <alexander.chubaty@canada.ca>'
+        
+    New maintainer:
+      Alex M Chubaty <alexander.chubaty@canada.ca>
+    Old maintainer(s):
+      Alex M Chubaty <achubaty@NRCan.gc.ca>
 
 ## Downstream dependencies
 
