@@ -20,6 +20,9 @@ matrix:
     before_install:
     - tlmgr install xcolor
     - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
+    r_github_packages:
+    - jimhester/covr
+    after_success:
     - Rscript -e 'library(covr); coveralls(coverage = print(package_coverage(quiet = FALSE)))'
 
   - os: linux
