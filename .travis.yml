@@ -1,6 +1,12 @@
-language: r
+# Sample .travis.yml for R projects.
+#
+# See README.md for instructions, or for more configuration options,
+# see the wiki:
+#   https://github.com/craigcitro/r-travis/wiki
 
 sudo: required
+
+language: r
 
 cran: https://cran.rstudio.com/
 
@@ -9,16 +15,32 @@ matrix:
 
   - os: linux
     dist: trusty
+    r: 3.1.2
+    cran: http://cran.rstudio.com/
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
+
+  - os: linux
+    dist: trusty
+    r: 3.2.0
+    cran: http://cran.rstudio.com/
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
+
+  - os: linux
+    dist: trusty
     r: oldrel
     before_install:
-    - tlmgr install xcolor
+    - tlmgr install xkeyval
     - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
 
   - os: linux
     dist: trusty
     r: release
     before_install:
-    - tlmgr install xcolor
+    - tlmgr install xkeyval
     - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
     r_github_packages:
     - jimhester/covr
@@ -29,7 +51,7 @@ matrix:
     dist: trusty
     r: devel
     before_install:
-    - tlmgr install xcolor
+    - tlmgr install xkeyval
     - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
 
   - os: osx
@@ -40,9 +62,9 @@ matrix:
     before_install:
     - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
 
-r_build_args: " "
+r_build_args: '--compact-vignettes="gs+qpdf"'
 
-r_check_args: "--as-cran"
+r_check_args: '--as-cran'
 
 warnings_are_errors: true
 
