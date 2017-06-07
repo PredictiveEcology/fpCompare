@@ -1,19 +1,71 @@
-language: r
+# Sample .travis.yml for R projects.
+#
+# See README.md for instructions, or for more configuration options,
+# see the wiki:
+#   https://github.com/craigcitro/r-travis/wiki
 
 sudo: required
 
-cran: http://cran.rstudio.com/
+language: r
 
-apt_packages:
-  - curl
-  - latex-xcolor
-  - libcurl4-openssl-dev
+cran: https://cran.rstudio.com/
 
-r_github_packages:
-  - jimhester/covr
+matrix:
+  include:
 
-after_success:
-  - Rscript -e 'library(covr); coveralls()'
+  - os: linux
+    dist: trusty
+    r: 3.1.2
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
+
+  - os: linux
+    dist: trusty
+    r: 3.2.0
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
+
+  - os: linux
+    dist: trusty
+    r: oldrel
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
+
+  - os: linux
+    dist: trusty
+    r: release
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
+    after_success:
+    - Rscript -e 'library(covr); coveralls(coverage = print(package_coverage(quiet = FALSE)))'
+
+  - os: linux
+    dist: trusty
+    r: devel
+    before_install:
+    - tlmgr install xkeyval
+    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
+
+  - os: osx
+    osx_image: xcode8
+    latex: false
+    r_build_args: '--no-build-vignettes'
+    r_check_args: '--as-cran --ignore-vignettes --no-examples'
+    before_install:
+    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
+
+r_build_args: '--compact-vignettes="gs+qpdf"'
+
+r_check_args: '--as-cran'
+
+warnings_are_errors: true
+
+r_binary_packages:
+  - covr
 
 notifications:
   email:
