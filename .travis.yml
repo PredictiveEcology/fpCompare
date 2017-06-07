@@ -23,7 +23,7 @@ matrix:
 
   - os: linux
     dist: precise
-    r: 3.2.0
+    r: 3.2.5
     cran: http://cran.rstudio.com/
     before_install:
     - tlmgr install xkeyval
