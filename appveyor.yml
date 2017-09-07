@@ -10,6 +10,9 @@ init:
 install:
   ps: Bootstrap
 
+cache:
+  - C:\RLibrary
+
 # Adapt as necessary starting from here
 
 version: 1.0.{build}-{branch}
@@ -49,6 +52,7 @@ branches:
 clone_depth: 5
 
 build_script:
+  - travis-tool.sh r_binary_install knitr rmarkdown testthat
   - travis-tool.sh install_deps
 
 test_script:
