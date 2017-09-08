@@ -1,6 +1,6 @@
 urls:
-  reference: https://predictiveecology.github.io/fpCompare//reference
-  article: https://predictiveecology.github.io/fpCompare//articles
+  reference: http://fpcompare.predictiveecology.org/reference
+  article: http://fpcompare.predictiveecology.org/articles
 articles:
   fpCompare: fpCompare.html
 

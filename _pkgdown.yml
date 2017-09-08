@@ -1,6 +1,5 @@
-url: https://predictiveecology.github.io/fpCompare/
+url: http://fpcompare.predictiveecology.org
 
 template:
   params:
     bootswatch: flatly
-
