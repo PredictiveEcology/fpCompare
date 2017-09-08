@@ -1,6 +1,5 @@
-url: http://fpcompare.predictiveecology.org/
+url: http://fpcompare.predictiveecology.org
 
 template:
   params:
     bootswatch: flatly
-
