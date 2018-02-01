@@ -1,56 +1,34 @@
 language: r
-
 sudo: required
-
 cran: https://cran.rstudio.com/
-
 matrix:
   include:
-
   - os: linux
     dist: trusty
     r: oldrel
-    before_install:
-    - tlmgr install xcolor
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
-
   - os: linux
     dist: trusty
     r: release
-    before_install:
-    - tlmgr install xcolor
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
     r_github_packages:
     - jimhester/covr
     after_success:
-    - Rscript -e 'library(covr); coveralls(coverage = print(package_coverage(quiet = FALSE)))'
-
+    - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
+    - Rscript -e 'lintr::lint_package()'
   - os: linux
     dist: trusty
     r: devel
-    before_install:
-    - tlmgr install xcolor
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
-
   - os: osx
-    osx_image: xcode8
+    osx_image: xcode9.2
     latex: false
     r_build_args: '--no-build-vignettes'
     r_check_args: '--as-cran --ignore-vignettes --no-examples'
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
-
 r_build_args: " "
-
 r_check_args: "--as-cran"
-
 warnings_are_errors: true
-
 notifications:
   email:
     on_success: change
     on_failure: change
-
 branches:
   only:
     - master
