@@ -1,6 +1,6 @@
 test_that("relational operators within tolerance", {
-  x <- .5-.3
-  y <- .3-.1
+  x <- 0.5 - 0.3
+  y <- 0.3 - 0.1
   expect_equal(x %==% y, TRUE)
   expect_equal(x %!=% y, FALSE)
 
@@ -24,7 +24,7 @@ test_that("relational operators within tolerance", {
   greater    <- a %>>% b
   equal      <- a %==% b
   notequal   <- a %!=% b
-  ids <- c(5L,8L)
+  ids <- c(5L, 8L)
   expect_equal(less[ids],        !greater[ids])
   expect_equal(less[-ids],       greater[-ids])
   expect_equal(less.eq,          !greater)
