@@ -1,8 +1,16 @@
-language: r
 sudo: required
+language: r
 cran: https://cran.rstudio.com/
 matrix:
   include:
+  - os: linux
+    dist: trusty
+    r: 3.1.3
+    cran: http://cran.rstudio.com/
+  - os: linux
+    dist: trusty
+    r: 3.2.5
+    cran: http://cran.rstudio.com/
   - os: linux
     dist: trusty
     r: oldrel
@@ -11,6 +19,7 @@ matrix:
     r: release
     r_github_packages:
     - jimhester/covr
+    - jimhester/lintr
     after_success:
     - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
     - Rscript -e 'lintr::lint_package()'

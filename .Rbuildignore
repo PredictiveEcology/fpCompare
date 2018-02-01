@@ -2,5 +2,8 @@
 ^\.Rproj\.user$
 .travis.yml
 cran-comments.md
+^docs$
 LICENSE
+^_pkgdown\.yml$
 ^revdep$
+

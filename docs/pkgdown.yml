@@ -1,0 +1,6 @@
+urls:
+  reference: http://fpcompare.predictiveecology.org/reference
+  article: http://fpcompare.predictiveecology.org/articles
+articles:
+  fpCompare: fpCompare.html
+
