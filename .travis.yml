@@ -7,33 +7,26 @@ matrix:
     dist: trusty
     r: 3.1.3
     cran: http://cran.rstudio.com/
-    before_install:
-    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
   - os: linux
     dist: trusty
     r: 3.2.5
     cran: http://cran.rstudio.com/
-    before_install:
-    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
   - os: linux
     dist: trusty
     r: oldrel
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
   - os: linux
     dist: trusty
     r: release
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
     r_github_packages:
     - jimhester/covr
+    - jimhester/lintr
     after_success:
-    - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
+    - Rscript -e 'covr::coveralls(package_coverage(type = "all", quiet = FALSE)))'
+    - Rscript -e 'lintr::lint_package()'
   - os: linux
     dist: trusty
     r: devel
     before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
     r_packages:
     - devtools
   - os: osx
@@ -42,7 +35,7 @@ matrix:
     r_build_args: '--no-build-vignettes'
     r_check_args: '--as-cran --ignore-vignettes --no-examples'
     before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
+    - Rscript -e 'install.packages("digest", type = "source")'
 r_build_args: '--compact-vignettes="gs+qpdf"'
 r_check_args: '--as-cran'
 warnings_are_errors: true
