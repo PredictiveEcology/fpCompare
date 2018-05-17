@@ -15,7 +15,7 @@
     Despite being aware of these problems, people still use numerical methods
     that fail to account for these and other rounding errors (this pitfall is
     the first to be highlighted in Circle 1 of Burns (2012)
-    [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)).
+    'The R Inferno' &lt;http://www.burns-stat.com/pages/Tutor/R_inferno.pdf&gt;).
     This package provides new relational operators useful for performing
     floating point number comparisons with a set tolerance.">
 <meta name="twitter:card" content="summary">
@@ -84,13 +84,13 @@
 <div id="reliable-comparison-of-floating-point-numbers" class="section level2">
 <h2 class="hasAnchor">
 <a href="#reliable-comparison-of-floating-point-numbers" class="anchor"></a>Reliable comparison of floating point numbers</h2>
-<p>Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers. Computer scientists and programmers are aware of these problems and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in Circle 1 of Burns (2012) <a href="http://www.burns-stat.com/pages/Tutor/R_inferno.pdf">The R Inferno</a>).</p>
+<p>Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers. Computer scientists and programmers are aware of these problems and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in Circle 1 of Burns (2012) <a href="https://www.burns-stat.com/pages/Tutor/R_inferno.pdf">The R Inferno</a>).</p>
 <p>To avoid these and other numerical rounding issues, R’s help file for relational operators (<em>e.g.</em>, <code>?'&gt;'</code>) suggests using <code>identical</code> and <code>all.equal</code> when making numerical comparisons:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x1 &lt;-<span class="st"> </span><span class="fl">0.5</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.3</span>
 x2 &lt;-<span class="st"> </span><span class="fl">0.3</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.1</span>
 x1 <span class="op">==</span><span class="st"> </span>x2                           <span class="co"># FALSE on most machines</span>
 <span class="kw">identical</span>(<span class="kw">all.equal</span>(x1, x2), <span class="ot">TRUE</span>) <span class="co"># TRUE everywhere</span></code></pre></div>
-<p>Inspired by <a href="http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f">R FAQ 7.31</a> and <a href="http://stackoverflow.com/a/2769618/1380598">this Stack Overflow answer</a>, this package provides new relational operators useful for performing floating point number comparisons with a set tolerance:</p>
+<p>Inspired by <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f">R FAQ 7.31</a> and <a href="https://stackoverflow.com/a/2769618/1380598">this Stack Overflow answer</a>, this package provides new relational operators useful for performing floating point number comparisons with a set tolerance:</p>
 <table class="table">
 <thead><tr class="header">
 <th>
@@ -190,8 +190,8 @@ x1 <span class="op">%==%</span><span class="st"> </span>x2       <span class="co
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/PredictiveEcology/fpCompare"><img src="https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master" alt="Build Status"></a></li>
 <li><a href="https://coveralls.io/r/PredictiveEcology/fpCompare?branch=master"><img src="https://coveralls.io/repos/PredictiveEcology/fpCompare/badge.svg?branch=master" alt="Coverage Status"></a></li>
-<li><a href="https://cran.rstudio.com/package=fpCompare"><img src="http://www.r-pkg.org/badges/version/fpCompare" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://cran.rstudio.com/package=fpCompare"><img src="http://cranlogs.r-pkg.org/badges/grand-total/fpCompare" alt="Downloads"></a></li>
+<li><a href="https://CRAN.R-project.org/package=fpCompare"><img src="http://www.r-pkg.org/badges/version/fpCompare" alt="CRAN_Status_Badge"></a></li>
+<li><a href="https://CRAN.R-project.org/package=fpCompare"><img src="http://cranlogs.r-pkg.org/badges/grand-total/fpCompare" alt="Downloads"></a></li>
 <li><a href="https://zenodo.org/badge/latestdoi/17892/PredictiveEcology/fpCompare"><img src="https://zenodo.org/badge/17892/PredictiveEcology/fpCompare.svg" alt="DOI"></a></li>
 </ul>
 </div>
