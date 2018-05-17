@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/PredictiveEcology/fpCompare.svg?branch=master)](https://travis-ci.org/PredictiveEcology/fpCompare)
 [![Coverage Status](https://coveralls.io/repos/PredictiveEcology/fpCompare/badge.svg?branch=master)](https://coveralls.io/r/PredictiveEcology/fpCompare?branch=master)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fpCompare)](https://cran.rstudio.com/package=fpCompare)
-[![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/fpCompare)](https://cran.rstudio.com/package=fpCompare)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fpCompare)](https://CRAN.R-project.org/package=fpCompare)
+[![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/fpCompare)](https://CRAN.R-project.org/package=fpCompare)
 [![DOI](https://zenodo.org/badge/17892/PredictiveEcology/fpCompare.svg)](https://zenodo.org/badge/latestdoi/17892/PredictiveEcology/fpCompare)
 
 ## Reliable comparison of floating point numbers
