@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Articles • fpCompare</title>
+<title>Changelog • fpCompare</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
 
 
 
-<meta property="og:title" content="Articles" />
+<meta property="og:title" content="Changelog" />
 
 
 <!-- mathjax -->
@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <div class="container template-article-index">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -97,18 +97,75 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Articles</h1>
+      <h1>Changelog <small></small></h1>
+      <small>Source: <a href='https://github.com/PredictiveEcology/fpCompare/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div class="section ">
-      <h3>All vignettes</h3>
-      <p class="section-desc"></p>
+    <div id="version-0-2-2" class="section level1">
+<h1 class="page-header">
+<a href="#version-0-2-2" class="anchor"></a>version 0.2.2<small> Unreleased </small>
+</h1>
+<ul>
+<li>update maintainer’s email address</li>
+</ul>
+</div>
+    <div id="version-0-2-1" class="section level1">
+<h1 class="page-header">
+<a href="#version-0-2-1" class="anchor"></a>version 0.2.1<small> 2015-09-01 </small>
+</h1>
+<ul>
+<li>update maintainer’s email address</li>
+<li>use HTTPS for CRAN urls</li>
+<li>improved vignette formatting (use <code><a href="http://www.rdocumentation.org/packages/rmarkdown/topics/render">rmarkdown::render</a></code>)</li>
+</ul>
+</div>
+    <div id="version-0-2-0" class="section level1">
+<h1 class="page-header">
+<a href="#version-0-2-0" class="anchor"></a>version 0.2.0<small> 2015-05-16 </small>
+</h1>
+<ul>
+<li>add <code>%&lt;&lt;%</code> and <code>%&gt;&gt;%</code> operators (‘less than’; ‘greater than’)</li>
+<li>move <code>cph</code> to end of the author field so <code>aut</code> displays as first name on CRAN</li>
+<li>fix bug report url in documentation</li>
+<li>
+<p>improved documentation and formatting:</p>
+<ul>
+<li>use short urls to avoid links spilling into margins</li>
+</ul>
+</li>
+</ul>
+</div>
+    <div id="version-0-1-0" class="section level1">
+<h1 class="page-header">
+<a href="#version-0-1-0" class="anchor"></a>version 0.1.0<small> 2015-04-03 </small>
+</h1>
+<ul>
+<li>initial version</li>
+<li>
+<p>adds new numeric relational operators that do comparisons using a tolerance value:</p>
+<ul>
+<li>
+<code>%&gt;=%</code>, <code>%&lt;=%</code>, <code>%==%</code>, <code>%!=%</code>
+</li>
+</ul>
+</li>
+<li><p>use <code>options(fpCompare.tolerance = value)</code> to set tolerance</p></li>
+</ul>
+</div>
+  </div>
 
-      <ul>
-        <li><a href="fpCompare.html">fpCompare</a></li>
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <div id="tocnav">
+      <h2>Contents</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#version-0-2-2">0.2.2</a></li>
+        <li><a href="#version-0-2-1">0.2.1</a></li>
+        <li><a href="#version-0-2-0">0.2.0</a></li>
+        <li><a href="#version-0-1-0">0.1.0</a></li>
       </ul>
     </div>
   </div>
+
 </div>
 
       <footer>

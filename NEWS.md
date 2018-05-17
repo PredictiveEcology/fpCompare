@@ -1,5 +1,9 @@
 Known issues: https://github.com/PredictiveEcology/fpCompare/issues
 
+version 0.2.2
+=============
+* update maintainer's email address
+
 version 0.2.1
 =============
 * update maintainer's email address
