@@ -26,10 +26,10 @@ In this version I have:
 * Windows 7            (local), R 3.5.0
 
 ### Development R version
-* Ubuntu 14.04     (travis-ci), R 3.6.0 (2018-05-17 r74734)
-* Ubuntu 18.04         (local), R 3.6.0 (2018-05-17 r74734)
-* Windows           (appveyor), R 3.6.0 (2018-05-15 r74727)
-* Windows        (win-builder), R 3.6.0 (2018-05-15 r74727)
+* Ubuntu 14.04     (travis-ci), R 3.6.0 (2018-06-05 r74851)
+* Ubuntu 18.04         (local), R 3.6.0 (2018-06-05 r74852)
+* Windows           (appveyor), R 3.6.0 (2018-06-05 r74852)
+* Windows        (win-builder), R 3.6.0 (2018-06-05 r74852)
 
 ## R CMD check results
 
@@ -37,7 +37,7 @@ There were no ERRORs or WARNINGs
 
 There was 1 NOTE:
 
-1. Maintainer's email address has changed.
+1. Maintainer's email address has changed (notified CRAN 2018-05-28).
 
     * checking CRAN incoming feasibility ... NOTE
     Maintainer: 'Alex M Chubaty <alex.chubaty@gmail.com>'
@@ -49,7 +49,9 @@ There was 1 NOTE:
 
 ## Downstream dependencies
 
-I have run R CMD check on downstream dependencies of `fpCompare`, and all have passed.
+I have run R CMD check on downstream dependencies of `fpCompare`, and all have passed except those noted below.
 Summary at https://github.com/PredictiveEcology/fpCompare/blob/master/revdep/README.md.
 
-* NOTE: `SpaDES.core` produces an error due to a non-CRAN package in Suggests, but passes once that dependency is installed.
+* `SpaDES.core` produces an error due to a non-CRAN package in Suggests, but passes once that dependency is installed.
+* `SpaDES.tools` produces an error due to an unrelated error in that package. I am a developer of `SpaDES.tools` and am preparing a fixed version for CRAN which will be submitted soon.
+
