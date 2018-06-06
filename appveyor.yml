@@ -55,7 +55,7 @@ branches:
 clone_depth: 5
 
 build_script:
-  - travis-tool.sh r_binary_install knitr rmarkdown testthat
+  - travis-tool.sh r_binary_install knitr rmarkdown stringi testthat
   - travis-tool.sh install_deps
 
 test_script:
