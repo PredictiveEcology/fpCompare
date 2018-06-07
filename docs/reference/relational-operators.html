@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Relational operators with tolerance — %&gt;=%" />
+
+<meta property="og:description" content="Binary operators which allow the comparison of values in numeric vectors." />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -47,21 +59,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">fpCompare</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">fpCompare</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.2</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="..//index.html">
+  <a href="../index.html">
     <span class="fa fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="../articles/fpCompare.html">Get Started</a>
+  <a href="../articles/fpCompare.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -73,6 +92,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -80,15 +100,19 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Relational operators with tolerance</h1>
+    <small class="dont-index">Source: <a href='https://github.com/PredictiveEcology/fpCompare/blob/master/R/fpCompare.R'><code>R/fpCompare.R</code></a></small>
+    <div class="hidden name"><code>relational-operators.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Binary operators which allow the comparison of values in numeric vectors.</p>
     
+    </div>
 
     <pre class="usage"><span class='no'>x</span> <span class='kw'>%&gt;=%</span> <span class='no'>y</span>
 
@@ -102,7 +126,7 @@
 
 <span class='no'>x</span> <span class='kw'>%!=%</span> <span class='no'>y</span></pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -124,37 +148,24 @@
 
     <p>These are similar to their counterparts in <code>base</code>, except a tolerance
 <code>fpCompare.tolerance</code> can be specified via <code>options</code> to account
-for floating point rounding errors:</p><table><tr><td>
-  <code>fpCompare</code> </td>
-<td> <code>base</code></td>
-</tr><tr><td>
-  ---------------- </td>
-<td> -----------</td>
-</tr><tr><td>
-  <code>%&gt;=%</code> </td>
-<td> <code>&gt;=</code></td>
-</tr><tr><td>
-  <code>%&gt;&gt;%</code> </td>
-<td> <code>&gt;</code></td>
-</tr><tr><td>
-  <code>%&lt;=%</code> </td>
-<td> <code>&lt;=</code></td>
-</tr><tr><td>
-  <code>%&lt;&lt;%</code> </td>
-<td> <code>&lt;</code></td>
-</tr><tr><td>
-  <code>%==%</code> </td>
-<td> <code>==</code></td>
-</tr><tr><td>
-  <code>%!=%</code> </td>
-<td> <code>!=</code></td>
-</tr></table>
+for floating point rounding errors:</p>
+<table class='table'>
+<tr><td><code>fpCompare</code></td><td><code>base</code></td></tr>
+<tr><td>----------------</td><td>-----------</td></tr>
+<tr><td><code>%&gt;=%</code></td><td><code>&gt;=</code></td></tr>
+<tr><td><code>%&gt;&gt;%</code></td><td><code>&gt;</code></td></tr>
+<tr><td><code>%&lt;=%</code></td><td><code>&lt;=</code></td></tr>
+<tr><td><code>%&lt;&lt;%</code></td><td><code>&lt;</code></td></tr>
+<tr><td><code>%==%</code></td><td><code>==</code></td></tr>
+<tr><td><code>%!=%</code></td><td><code>!=</code></td></tr>
+<tr><td></td><td><code>fpCompare</code></td></tr>
+</table>
     <p>Inspired by R FAQ 7.31 (<a href='http://ow.ly/LiU7K'>http://ow.ly/LiU7K</a>)
 and this post (<a href='http://stackoverflow.com/a/2769618/1380598'>http://stackoverflow.com/a/2769618/1380598</a>).</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code>all.equal</code>, <code>.Machine</code></p>
+    <div class='dont-index'><p><code>all.equal</code>, <code>.Machine</code></p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -164,7 +175,7 @@ and this post (<a href='http://stackoverflow.com/a/2769618/1380598'>http://stack
 <span class='fu'>set.seed</span>(<span class='fl'>123</span>)
 <span class='no'>a</span> <span class='kw'>&lt;-</span> <span class='fl'>1</span>:<span class='fl'>6</span>
 <span class='no'>b</span> <span class='kw'>&lt;-</span> <span class='fu'>jitter</span>(<span class='fl'>1</span>:<span class='fl'>6</span>, <span class='fl'>1e-7</span>)
-<span class='fu'>print</span>(<span class='fu'>rbind</span>(<span class='no'>a</span>,<span class='no'>b</span>), <span class='kw'>digits</span><span class='kw'>=</span><span class='fl'>16</span>)</div><div class='output co'>#&gt;                 [,1]              [,2]              [,3]              [,4]
+<span class='fu'>print</span>(<span class='fu'>rbind</span>(<span class='no'>a</span>, <span class='no'>b</span>), <span class='kw'>digits</span> <span class='kw'>=</span> <span class='fl'>16</span>)</div><div class='output co'>#&gt;                 [,1]              [,2]              [,3]              [,4]
 #&gt; a 1.0000000000000000 2.000000000000000 3.000000000000000 4.000000000000000
 #&gt; b 0.9999999915031008 2.000000011532205 2.999999996359077 4.000000015320696
 #&gt;                [,5]             [,6]
@@ -199,11 +210,14 @@ Alex Chubaty
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

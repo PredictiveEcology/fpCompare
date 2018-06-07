@@ -1,6 +1,9 @@
+pandoc: 1.19.2.4
+pkgdown: 1.1.0
+pkgdown_sha: ~
+articles:
+  fpCompare: fpCompare.html
 urls:
   reference: http://fpcompare.predictiveecology.org/reference
   article: http://fpcompare.predictiveecology.org/articles
-articles:
-  fpCompare: fpCompare.html
 

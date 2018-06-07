@@ -1,7 +1,3 @@
-### \code{fpCompare.tolerance} is set in \code{options} during package load
-### and is unset on unload.
-
-################################################################################
 #' Relational operators with tolerance
 #'
 #' Binary operators which allow the comparison of values in numeric vectors.
@@ -66,11 +62,11 @@
 #' @export
 #' @rdname relational-operators
 `%==%` <- function(x, y) {
-  (abs(x-y) < getOption("fpCompare.tolerance"))
+  (abs(x - y) < getOption("fpCompare.tolerance"))
 }
 
 #' @export
 #' @rdname relational-operators
 `%!=%` <- function(x, y) {
-  (abs(x-y) > getOption("fpCompare.tolerance"))
+  (abs(x - y) > getOption("fpCompare.tolerance"))
 }

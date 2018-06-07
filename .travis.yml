@@ -5,46 +5,44 @@ matrix:
   include:
   - os: linux
     dist: trusty
-    r: 3.1.3
+    r: 3.1.0
     cran: http://cran.rstudio.com/
-    before_install:
-    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
   - os: linux
     dist: trusty
-    r: 3.2.5
+    r: 3.2.0
     cran: http://cran.rstudio.com/
-    before_install:
-    - echo "options(repos = c(CRAN='http://cran.rstudio.com'))" >> ~/.Rprofile
+  - os: linux
+    dist: trusty
+    r: 3.3.0
+    cran: http://cran.rstudio.com/
+  - os: linux
+    dist: trusty
+    r: 3.4.0
+    cran: http://cran.rstudio.com/
   - os: linux
     dist: trusty
     r: oldrel
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
   - os: linux
     dist: trusty
     r: release
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
     r_github_packages:
     - jimhester/covr
+    - jimhester/lintr
     after_success:
     - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
+    - Rscript -e 'lintr::lint_package()'
   - os: linux
     dist: trusty
     r: devel
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
     r_packages:
     - devtools
   - os: osx
-    osx_image: xcode8
+    osx_image: xcode9.2
     latex: false
     r_build_args: '--no-build-vignettes'
     r_check_args: '--as-cran --ignore-vignettes --no-examples'
-    before_install:
-    - echo "options(repos = c(CRAN='https://cran.rstudio.com'))" >> ~/.Rprofile
-r_build_args: '--compact-vignettes="gs+qpdf"'
-r_check_args: '--as-cran'
+r_build_args: " "
+r_check_args: "--as-cran"
 warnings_are_errors: true
 notifications:
   email:
