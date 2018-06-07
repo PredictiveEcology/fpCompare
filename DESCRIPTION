@@ -3,7 +3,7 @@ Type: Package
 Title: Reliable Comparison of Floating Point Numbers
 URL: https://github.com/PredictiveEcology/fpCompare
 Version: 0.2.2
-Date: 2018-05-17
+Date: 2018-06-07
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email="alex.chubaty@gmail.com",
     role=c("aut", "cre")),
