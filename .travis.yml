@@ -4,26 +4,18 @@ cran: https://cran.rstudio.com/
 matrix:
   include:
   - os: linux
-    dist: trusty
-    r: 3.1.0
+    dist: xenial
+    r: 3.3
     cran: http://cran.rstudio.com/
   - os: linux
-    dist: trusty
-    r: 3.2.0
+    dist: xenial
+    r: 3.4
     cran: http://cran.rstudio.com/
   - os: linux
-    dist: trusty
-    r: 3.3.0
-    cran: http://cran.rstudio.com/
-  - os: linux
-    dist: trusty
-    r: 3.4.0
-    cran: http://cran.rstudio.com/
-  - os: linux
-    dist: trusty
+    dist: xenial
     r: oldrel
   - os: linux
-    dist: trusty
+    dist: xenial
     r: release
     r_github_packages:
     - jimhester/covr
@@ -32,12 +24,12 @@ matrix:
     - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
     - Rscript -e 'lintr::lint_package()'
   - os: linux
-    dist: trusty
+    dist: xenial
     r: devel
     r_packages:
     - devtools
   - os: osx
-    osx_image: xcode9.2
+    osx_image: xcode9.4
     latex: false
     r_build_args: '--no-build-vignettes'
     r_check_args: '--as-cran --ignore-vignettes --no-examples'
