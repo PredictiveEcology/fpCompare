@@ -18,16 +18,16 @@ matrix:
     dist: xenial
     r: release
     r_github_packages:
-    - jimhester/covr
-    - jimhester/lintr
+      - jimhester/lintr
+      - r-lib/covr
     after_success:
-    - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
-    - Rscript -e 'lintr::lint_package()'
+      - Rscript -e 'covr::coveralls(type = "all", quiet = FALSE)'
+      - Rscript -e 'lintr::lint_package()'
   - os: linux
     dist: xenial
     r: devel
     r_packages:
-    - devtools
+      - devtools
   - os: osx
     osx_image: xcode9.4
     latex: false
