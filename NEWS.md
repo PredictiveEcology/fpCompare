@@ -1,6 +1,6 @@
 Known issues: https://github.com/PredictiveEcology/fpCompare/issues
 
-version 0.2.2.9000
+version 0.2.3
 =============
 * drop support for very old versions of R (3.1 and 3.2) due to dependency requirements
 
