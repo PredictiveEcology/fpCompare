@@ -8,3 +8,4 @@
 ^LICENSE$
 ^_pkgdown\.yml$
 ^revdep$
+^CRAN-RELEASE$
