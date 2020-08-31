@@ -3,7 +3,7 @@ Type: Package
 Title: Reliable Comparison of Floating Point Numbers
 URL: https://github.com/PredictiveEcology/fpCompare
 Version: 0.2.3.9000
-Date: 2019-09-06
+Date: 2020-08-31
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email="alex.chubaty@gmail.com",
     role=c("aut", "cre")),
@@ -21,6 +21,7 @@ Description: Comparisons of floating point numbers are problematic due to errors
 Depends:
     R (>= 3.3)
 Suggests:
+    covr,
     knitr,
     rmarkdown,
     testthat
