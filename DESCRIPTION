@@ -6,9 +6,9 @@ Version: 0.2.3.9000
 Date: 2020-08-31
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email="alex.chubaty@gmail.com",
-    role=c("aut", "cre")),
+           role=c("aut", "cre"), comment = c(ORCID = "0000-0001-7146-8135")),
     person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
-    role="cph")
+           role="cph")
     )
 Description: Comparisons of floating point numbers are problematic due to errors
     associated with the binary representation of decimal numbers.
@@ -29,4 +29,4 @@ License: GPL-3
 VignetteBuilder: knitr
 ByteCompile: yes
 BugReports: https://github.com/PredictiveEcology/fpCompare/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
