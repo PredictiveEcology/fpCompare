@@ -5,7 +5,7 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fpCompare)](https://CRAN.R-project.org/package=fpCompare)
 [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/fpCompare)](https://CRAN.R-project.org/package=fpCompare)
 [![DOI](https://zenodo.org/badge/17892/PredictiveEcology/fpCompare.svg)](https://zenodo.org/badge/latestdoi/17892/PredictiveEcology/fpCompare)
-[![Codecov test coverage](https://codecov.io/gh/PredictiveEcology/fpCompare/branch/master/graph/badge.svg)](https://codecov.io/gh/PredictiveEcology/fpCompare?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/PredictiveEcology/fpCompare/branch/master/graph/badge.svg)](https://app.codecov.io/gh/PredictiveEcology/fpCompare?branch=master)
 <!-- badges: end -->
 
 ## Reliable comparison of floating point numbers
