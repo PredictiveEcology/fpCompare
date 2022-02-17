@@ -7,7 +7,8 @@ Date: 2022-02-17
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email="achubaty@for-cast.ca",
            role=c("aut", "cre"), comment = c(ORCID = "0000-0001-7146-8135")),
-    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    person(paste("Her Majesty the Queen in Right of Canada,",
+                 "as represented by the Minister of Natural Resources Canada"),
            role="cph")
     )
 Description: Comparisons of floating point numbers are problematic due to errors
