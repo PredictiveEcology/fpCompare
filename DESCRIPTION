@@ -3,9 +3,9 @@ Type: Package
 Title: Reliable Comparison of Floating Point Numbers
 URL: https://github.com/PredictiveEcology/fpCompare
 Version: 0.2.3.9000
-Date: 2020-08-31
+Date: 2022-02-17
 Authors@R: c(
-    person(c("Alex", "M"), "Chubaty", email="alex.chubaty@gmail.com",
+    person(c("Alex", "M"), "Chubaty", email="achubaty@for-cast.ca",
            role=c("aut", "cre"), comment = c(ORCID = "0000-0001-7146-8135")),
     person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
            role="cph")
