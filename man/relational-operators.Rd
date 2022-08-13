@@ -50,8 +50,8 @@ for floating point rounding errors:
   \code{\%!=\%} \tab \code{!=}\cr
 }
 
-Inspired by R FAQ 7.31 (\url{http://ow.ly/LiU7K})
-and this post (\url{http://stackoverflow.com/a/2769618/1380598}).
+Inspired by R FAQ 7.31 (\url{https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f})
+and this post (\url{https://stackoverflow.com/a/2769618/1380598}).
 }
 \examples{
 x1 <- 0.5 - 0.3
