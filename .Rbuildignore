@@ -1,11 +1,11 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.lintr$
-^\.travis\.yml$
-^appveyor\.yml$
 ^cran-comments\.md$
 ^docs$
 ^LICENSE$
 ^_pkgdown\.yml$
 ^revdep$
+^\.github$
+^codecov\.yml$
 ^CRAN-RELEASE$

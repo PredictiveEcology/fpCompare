@@ -2,14 +2,7 @@
 title: "fpCompare"
 author: "Alex M. Chubaty"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
-output:
-  pdf_document:
-    number_sections: no
-    toc: no
-  html_document:
-    number_sections: no
-    self_contained: yes
-    toc: no
+output: rmarkdown::html_vignette
 bibliography: bibliography.bib
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
@@ -31,7 +24,7 @@ x1 == x2                           # FALSE on most machines
 identical(all.equal(x1, x2), TRUE) # TRUE everywhere
 ```
 
-Inspired by [R FAQ 7.31](http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f) and [this Stack Overflow answer](http://stackoverflow.com/a/2769618/1380598), this package provides new relational operators useful for performing floating point number comparisons with a set tolerance:
+Inspired by [R FAQ 7.31](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f) and [this Stack Overflow answer](https://stackoverflow.com/a/2769618/1380598), this package provides new relational operators useful for performing floating point number comparisons with a set tolerance:
 
 **`fpCompare`**[^1] | **`base`**
 --------------------|-----------

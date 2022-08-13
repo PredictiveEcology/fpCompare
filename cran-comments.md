@@ -1,33 +1,34 @@
 ## Maintenance release
 
-This version drops support for R 3.1 and 3.2, as dependency packages no longer suuport these versions of R.
+This version drops support for R 3.3, fixes URLs, and updates the maintainer's email address.
 
 ## Test environments
 
 ### Previous R versions
-* Ubuntu 16.04        (travis-ci), R 3.3.3
-* Ubuntu 16.04        (travis-ci), R 3.4.4
-* Ubuntu 16.04        (travis-ci), R 3.5.3
-* Windows 7            (appveyor), R 3.3.3
-* Windows 7            (appveyor), R 3.4.4
-* Windows 7            (appveyor), R 3.5.3
-* Windows 7               (local), R 3.5.3
-* Windows           (win-builder), R 3.5.3
+* Ubuntu 20.04           (GitHub), R 4.0.5
+* Ubuntu 20.04           (GitHub), R 4.1.3
+* Windows                (GitHub), R 3.3.3
+* Windows                (GitHub), R 3.4.4
+* Windows                (GitHub), R 3.5.3
+* Windows                (GitHub), R 3.6.3
+* Windows                (GitHub), R 4.0.5
+* Windows                (GitHub), R 4.1.3
+* Windows           (win-builder), R 4.1.3
 
 ### Current R versions
-* macOS Mojave        (travis-ci), R 3.6.1
-* macOS Mojave            (local), R 3.6.1
-* Ubuntu 16.04        (travis-ci), R 3.6.1
-* Ubuntu 18.04            (local), R 3.6.1
-* Windows              (appveyor), R 3.6.1
-* Windows                 (local), R 3.6.1
-* Windows           (win-builder), R 3.6.1
+* macOS 11.6 Big Sur     (GitHub), R 4.2.1
+* macOS 11.6 Big Sur      (local), R 4.2.1
+* Ubuntu 20.04           (GitHub), R 4.2.1
+* Ubuntu 20.04            (local), R 4.2.1
+* Windows                (GitHub), R 4.2.1
+* Windows                 (local), R 4.2.1
+* Windows           (win-builder), R 4.2.1
 
 ### Development R version
-* Ubuntu 16.04       (travis-ci), R 3.7.0 (2019-09-05 r77152)
-* Debian 18.04           (local), R 3.7.0 (2019-09-05 r77152)
-* Windows             (appveyor), R 3.7.0 (2019-09-04 r77145)
-* Windows          (win-builder), R 3.7.0 (2019-09-02 r77130)
+* Ubuntu 20.04          (GitHub), R-devel (2022-08-11 r82713)
+* Ubuntu 20.04           (local), R-devel (2022-08-11 r82713)
+* Windows               (GitHub), R-devel (2022-08-11 r82713)
+* Windows          (win-builder), R-devel (2022-08-11 r82713 ucrt)
 
 ## R CMD check results
 
