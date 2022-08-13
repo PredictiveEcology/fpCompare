@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://fpcompare.predictiveecology.org/index.html</loc>
+    <loc>http://fpcompare.predictiveecology.org/404.html</loc>
   </url>
   <url>
-    <loc>http://fpcompare.predictiveecology.org/reference/relational-operators.html</loc>
+    <loc>http://fpcompare.predictiveecology.org/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/LICENSE.html</loc>
   </url>
   <url>
     <loc>http://fpcompare.predictiveecology.org/articles/fpCompare.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/authors.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/index.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/news/index.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>http://fpcompare.predictiveecology.org/reference/relational-operators.html</loc>
   </url>
 </urlset>

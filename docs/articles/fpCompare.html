@@ -6,19 +6,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>fpCompare • fpCompare</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="fpCompare">
-<meta property="og:description" content="">
-<meta name="twitter:card" content="summary">
+<meta property="og:description" content="fpCompare">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,18 +33,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">fpCompare</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.4</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../articles/fpCompare.html">Get started</a>
 </li>
@@ -55,8 +51,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/PredictiveEcology/fpCompare">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/PredictiveEcology/fpCompare/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -73,28 +69,41 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>fpCompare</h1>
-                        <h4 class="author">Alex M. Chubaty</h4>
+      <h1 data-toc-skip>fpCompare</h1>
+                        <h4 data-toc-skip class="author">Alex M.
+Chubaty</h4>
             
-            <h4 class="date">September 06, 2019</h4>
+            <h4 data-toc-skip class="date">August 13, 2022</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/PredictiveEcology/fpCompare/blob/master/vignettes/fpCompare.Rmd"><code>vignettes/fpCompare.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/PredictiveEcology/fpCompare/blob/HEAD/vignettes/fpCompare.Rmd" class="external-link"><code>vignettes/fpCompare.Rmd</code></a></small>
       <div class="hidden name"><code>fpCompare.Rmd</code></div>
 
     </div>
 
     
     
-<div id="reliable-comparison-of-floating-point-numbers" class="section level1">
-<h1 class="hasAnchor">
-<a href="#reliable-comparison-of-floating-point-numbers" class="anchor"></a>Reliable comparison of floating point numbers</h1>
-<p>Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers. Computer scientists and programmers are aware of these problems <span class="citation">(<em>.e.g.</em>, Goldberg 1991)</span> and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in the First Circle of “The R Inferno” <span class="citation">(Burns 2012)</span>).</p>
-<p>To avoid these and other numerical rounding issues, R’s help file for relational operators (<em>e.g.</em>, <code><a href="https://rdrr.io/r/base/Comparison.html">?'&gt;'</a></code>) suggests using <code>identical</code> and <code>all.equal</code> when making numerical comparisons:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">x1 &lt;-<span class="st"> </span><span class="fl">0.5</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.3</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">x2 &lt;-<span class="st"> </span><span class="fl">0.3</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.1</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">x1 <span class="op">==</span><span class="st"> </span>x2                           <span class="co"># FALSE on most machines</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw"><a href="https://rdrr.io/r/base/identical.html">identical</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/all.equal.html">all.equal</a></span>(x1, x2), <span class="ot">TRUE</span>) <span class="co"># TRUE everywhere</span></a></code></pre></div>
-<p>Inspired by <a href="http://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f">R FAQ 7.31</a> and <a href="http://stackoverflow.com/a/2769618/1380598">this Stack Overflow answer</a>, this package provides new relational operators useful for performing floating point number comparisons with a set tolerance:</p>
+<div class="section level2">
+<h2 id="reliable-comparison-of-floating-point-numbers">Reliable comparison of floating point numbers<a class="anchor" aria-label="anchor" href="#reliable-comparison-of-floating-point-numbers"></a>
+</h2>
+<p>Comparisons of floating point numbers are problematic due to errors
+associated with the binary representation of decimal numbers. Computer
+scientists and programmers are aware of these problems <span class="citation">(<em>.e.g.</em>, Goldberg 1991)</span> and yet people
+still use numerical methods which fail to account for floating point
+errors (this pitfall is the first to be highlighted in the First Circle
+of “The R Inferno” <span class="citation">(Burns 2012)</span>).</p>
+<p>To avoid these and other numerical rounding issues, R’s help file for
+relational operators (<em>e.g.</em>, <code><a href="https://rdrr.io/r/base/Comparison.html" class="external-link">?'&gt;'</a></code>) suggests
+using <code>identical</code> and <code>all.equal</code> when making
+numerical comparisons:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">x1</span> <span class="op">&lt;-</span> <span class="fl">0.5</span> <span class="op">-</span> <span class="fl">0.3</span></span>
+<span><span class="va">x2</span> <span class="op">&lt;-</span> <span class="fl">0.3</span> <span class="op">-</span> <span class="fl">0.1</span></span>
+<span><span class="va">x1</span> <span class="op">==</span> <span class="va">x2</span>                           <span class="co"># FALSE on most machines</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/identical.html" class="external-link">identical</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/all.equal.html" class="external-link">all.equal</a></span><span class="op">(</span><span class="va">x1</span>, <span class="va">x2</span><span class="op">)</span>, <span class="cn">TRUE</span><span class="op">)</span> <span class="co"># TRUE everywhere</span></span></code></pre></div>
+<p>Inspired by <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f" class="external-link">R
+FAQ 7.31</a> and <a href="https://stackoverflow.com/a/2769618/1380598" class="external-link">this Stack Overflow
+answer</a>, this package provides new relational operators useful for
+performing floating point number comparisons with a set tolerance:</p>
 <table class="table">
 <thead><tr class="header">
 <th>
@@ -104,112 +113,115 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><code><a href="../reference/relational-operators.html">%&gt;=%</a></code></td>
-<td><code><a href="https://rdrr.io/r/base/Comparison.html">&gt;=</a></code></td>
+<td><code>%&gt;=%</code></td>
+<td><code>&gt;=</code></td>
 </tr>
 <tr class="even">
-<td><code><a href="../reference/relational-operators.html">%&gt;&gt;%</a></code></td>
-<td><code><a href="https://rdrr.io/r/base/Comparison.html">&gt;</a></code></td>
+<td><code>%&gt;&gt;%</code></td>
+<td><code>&gt;</code></td>
 </tr>
 <tr class="odd">
-<td><code><a href="../reference/relational-operators.html">%&lt;=%</a></code></td>
-<td><code><a href="https://rdrr.io/r/base/Comparison.html">&lt;=</a></code></td>
+<td><code>%&lt;=%</code></td>
+<td><code>&lt;=</code></td>
 </tr>
 <tr class="even">
-<td><code><a href="../reference/relational-operators.html">%&lt;&lt;%</a></code></td>
-<td><code><a href="https://rdrr.io/r/base/Comparison.html">&lt;</a></code></td>
+<td><code>%&lt;&lt;%</code></td>
+<td><code>&lt;</code></td>
 </tr>
 <tr class="odd">
-<td><code><a href="../reference/relational-operators.html">%==%</a></code></td>
-<td><code><a href="https://rdrr.io/r/base/Comparison.html">==</a></code></td>
+<td><code>%==%</code></td>
+<td><code>==</code></td>
 </tr>
 <tr class="even">
-<td><code><a href="../reference/relational-operators.html">%!=%</a></code></td>
-<td><code><a href="https://rdrr.io/r/base/Comparison.html">!=</a></code></td>
+<td><code>%!=%</code></td>
+<td><code>!=</code></td>
 </tr>
 </tbody>
 </table>
-<p>These functions use the <code>base</code> relational operators to make comparisons, but incorporate a tolerance value (<code>fpCompare.tolerance</code>) similar to <code>all.equal</code>. The default <code>fpCompare.tolerance</code> value is <code>.Machine$double.eps^0.5</code>, set via <code>options</code>. This is the same default used in <code>all.equal</code> for numeric comparisons.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># set telorance value</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">tol =<span class="st"> </span>.Machine<span class="op">$</span>double.eps<span class="op">^</span><span class="fl">0.5</span>       <span class="co"># default value</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/options.html">options</a></span>(<span class="dt">fpCompare.tolerance =</span> tol)</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co"># perform comparisons</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">x1 &lt;-<span class="st"> </span><span class="fl">0.5</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.3</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">x2 &lt;-<span class="st"> </span><span class="fl">0.3</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.1</span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8">x1 <span class="op">==</span><span class="st"> </span>x2         <span class="co"># FALSE on most machines</span></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9">x1 <span class="op">%==%</span><span class="st"> </span>x2       <span class="co"># TRUE everywhere</span></a></code></pre></div>
-
+<p>These functions use the <code>base</code> relational operators to
+make comparisons, but incorporate a tolerance value
+(<code>fpCompare.tolerance</code>) similar to <code>all.equal</code>.
+The default <code>fpCompare.tolerance</code> value is
+<code>.Machine$double.eps^0.5</code>, set via <code>options</code>. This
+is the same default used in <code>all.equal</code> for numeric
+comparisons.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># set telorance value</span></span>
+<span><span class="va">tol</span> <span class="op">=</span> <span class="va">.Machine</span><span class="op">$</span><span class="va">double.eps</span><span class="op">^</span><span class="fl">0.5</span>       <span class="co"># default value</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>fpCompare.tolerance <span class="op">=</span> <span class="va">tol</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># perform comparisons</span></span>
+<span><span class="va">x1</span> <span class="op">&lt;-</span> <span class="fl">0.5</span> <span class="op">-</span> <span class="fl">0.3</span></span>
+<span><span class="va">x2</span> <span class="op">&lt;-</span> <span class="fl">0.3</span> <span class="op">-</span> <span class="fl">0.1</span></span>
+<span><span class="va">x1</span> <span class="op">==</span> <span class="va">x2</span>         <span class="co"># FALSE on most machines</span></span>
+<span><span class="va">x1</span> <span class="op"><a href="../reference/relational-operators.html">%==%</a></span> <span class="va">x2</span>       <span class="co"># TRUE everywhere</span></span></code></pre></div>
+<div style="page-break-after: always;"></div>
 </div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
-<div id="from-cran" class="section level2">
-<h2 class="hasAnchor">
-<a href="#from-cran" class="anchor"></a>From CRAN</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"fpCompare"</span>)</a></code></pre></div>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="section level3">
+<h3 id="from-cran">From CRAN<a class="anchor" aria-label="anchor" href="#from-cran"></a>
+</h3>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"fpCompare"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="from-github" class="section level2">
-<h2 class="hasAnchor">
-<a href="#from-github" class="anchor"></a>From GitHub</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(devtools)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/reexports.html">install_github</a></span>(<span class="st">"PredictiveEcology/fpCompare"</span>)</a></code></pre></div>
-</div>
-</div>
-<div id="bug-reports" class="section level1">
-<h1 class="hasAnchor">
-<a href="#bug-reports" class="anchor"></a>Bug Reports</h1>
-<p><a href="https://github.com/PredictiveEcology/fpCompare/issues">https://github.com/PredictiveEcology/fpCompare/issues</a></p>
-</div>
-<div id="references" class="section level1 unnumbered">
-<h1 class="hasAnchor">
-<a href="#references" class="anchor"></a>References</h1>
-<div id="refs" class="references">
-<div id="ref-Burns:2012ri">
-<p>Burns, Patrick. 2012. <em>The R Inferno</em>. 2nd ed. <a href="http://www.burns-stat.com/pages/Tutor/R_inferno.pdf">http://www.burns-stat.com/pages/Tutor/R_inferno.pdf</a>.</p>
-</div>
-<div id="ref-Goldberg:1991ac">
-<p>Goldberg, David. 1991. “What every computer scientist should know about floating-point arithmetic.” <em>ACM Computing Surveys</em>, 171–264. <a href="http://dl.acm.org/citation.cfm?id=103163">http://dl.acm.org/citation.cfm?id=103163</a>.</p>
+<div class="section level3">
+<h3 id="from-github">From GitHub<a class="anchor" aria-label="anchor" href="#from-github"></a>
+</h3>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"PredictiveEcology/fpCompare"</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
+<div class="section level2">
+<h2 id="bug-reports">Bug Reports<a class="anchor" aria-label="anchor" href="#bug-reports"></a>
+</h2>
+<p><a href="https://github.com/PredictiveEcology/fpCompare/issues" class="external-link">https://github.com/PredictiveEcology/fpCompare/issues</a></p>
 </div>
-<div class="footnotes">
+<div class="section level2">
+<h2 class="unnumbered" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Burns:2012ri" class="csl-entry">
+Burns, Patrick. 2012. <em><span>The R Inferno</span></em>. 2nd ed. <a href="https://www.burns-stat.com/pages/Tutor/R_inferno.pdf" class="external-link">https://www.burns-stat.com/pages/Tutor/R_inferno.pdf</a>.
+</div>
+<div id="ref-Goldberg:1991ac" class="csl-entry">
+Goldberg, David. 1991. <span>“<span class="nocase">What every computer
+scientist should know about floating-point arithmetic</span>.”</span>
+<em>ACM Computing Surveys</em>, 171–264. <a href="https://dl.acm.org/doi/10.1145/103162.103163" class="external-link">https://dl.acm.org/doi/10.1145/103162.103163</a>.
+</div>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
 <hr>
 <ol>
-<li id="fn1"><p>The <code><a href="../reference/relational-operators.html">%&lt;&lt;%</a></code> and <code><a href="../reference/relational-operators.html">%&gt;&gt;%</a></code> symbols are used instead of <code>%&lt;%</code> and <code>%&gt;%</code> to avoid a conflict with <code>magrittr</code>’s pipe operator (<code>%&gt;%</code>).<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>The <code>%&lt;&lt;%</code> and <code>%&gt;&gt;%</code>
+symbols are used instead of <code>%&lt;%</code> and <code>%&gt;%</code>
+to avoid a conflict with <code>magrittr</code>’s pipe operator
+(<code>%&gt;%</code>).<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#reliable-comparison-of-floating-point-numbers">Reliable comparison of floating point numbers</a></li>
-      <li>
-<a href="#installation">Installation</a><ul class="nav nav-pills nav-stacked">
-<li><a href="#from-cran">From CRAN</a></li>
-      <li><a href="#from-github">From GitHub</a></li>
-      </ul>
-</li>
-      <li><a href="#bug-reports">Bug Reports</a></li>
-      <li><a href="#references">References</a></li>
-      </ul>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
 </div>
-      </div>
 
 </div>
 
 
 
       <footer><div class="copyright">
-  <p>Developed by Alex M Chubaty.</p>
+  <p></p>
+<p>Developed by Alex M Chubaty.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
@@ -217,6 +229,8 @@
 
   
 
+
+  
 
   </body>
 </html>
