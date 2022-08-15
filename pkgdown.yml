@@ -1,0 +1,10 @@
+pandoc: 2.14.2
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  fpCompare: fpCompare.html
+last_built: 2022-08-15T20:32Z
+urls:
+  reference: http://fpcompare.predictiveecology.org/reference
+  article: http://fpcompare.predictiveecology.org/articles
+
