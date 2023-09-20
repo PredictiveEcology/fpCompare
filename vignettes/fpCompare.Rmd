@@ -5,12 +5,22 @@ date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output: rmarkdown::html_vignette
 bibliography: bibliography.bib
 vignette: >
+  %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{fpCompare: reliable comparison of floating point numbers}
-  %\VignetteDepends{fpCompare}
   %\VignetteKeyword{floating point numbers, numerical comparisons}
-  %\usepackage[utf8]{inputenc}
 ---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(fpCompare)
+```
 
 # Reliable comparison of floating point numbers
 Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers.

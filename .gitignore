@@ -8,8 +8,9 @@
 
 # RStudio files
 .Rproj.user/
+.Rproj.user
 
 # produced vignettes
+inst/doc
 vignettes/*.html
 vignettes/*.pdf
-.Rproj.user
