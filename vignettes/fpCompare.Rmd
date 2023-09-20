@@ -13,7 +13,8 @@ vignette: >
 ---
 
 # Reliable comparison of floating point numbers
-Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers. Computer scientists and programmers are aware of these problems [*.e.g.*, @Goldberg:1991ac] and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in the First Circle of "The R Inferno" [@Burns:2012ri]).
+Comparisons of floating point numbers are problematic due to errors associated with the binary representation of decimal numbers.
+Computer scientists and programmers are aware of these problems [*.e.g.*, @Goldberg:1991ac] and yet people still use numerical methods which fail to account for floating point errors (this pitfall is the first to be highlighted in the First Circle of "The R Inferno" [@Burns:2012ri]).
 
 To avoid these and other numerical rounding issues, R's help file for relational operators (*e.g.*, `?'>'`) suggests using `identical` and `all.equal` when making numerical comparisons:
 
@@ -35,7 +36,9 @@ Inspired by [R FAQ 7.31](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn
 `%==%`              | `==`
 `%!=%`              | `!=`
 
-These functions use the `base` relational operators to make comparisons, but incorporate a tolerance value (`fpCompare.tolerance`) similar to `all.equal`. The default `fpCompare.tolerance` value is `.Machine$double.eps^0.5`, set via `options`. This is the same default used in `all.equal` for numeric comparisons.
+These functions use the `base` relational operators to make comparisons, but incorporate a tolerance value (`fpCompare.tolerance`) similar to `all.equal`.
+The default `fpCompare.tolerance` value is `.Machine$double.eps^0.5`, set via `options`.
+This is the same default used in `all.equal` for numeric comparisons.
 
 ```r
 # set telorance value
@@ -64,12 +67,12 @@ install.packages("fpCompare")
 ## From GitHub
 
 ```r
-library(devtools)
-install_github("PredictiveEcology/fpCompare")
+# install.packages("remotes")
+remotes::install_github("PredictiveEcology/fpCompare")
 ```
 
 # Bug Reports
 
-[https://github.com/PredictiveEcology/fpCompare/issues](https://github.com/PredictiveEcology/fpCompare/issues)
+<https://github.com/PredictiveEcology/fpCompare/issues>
 
 # References
