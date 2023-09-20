@@ -1,6 +1,6 @@
 ## Maintenance release
 
-This version drops support for R 3.3, fixes URLs, and updates the maintainer's email address.
+This version drops support for R 3.4.
 
 ## Test environments
 
