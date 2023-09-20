@@ -2,23 +2,23 @@
 #'
 #' Binary operators which allow the comparison of values in numeric vectors.
 #'
-#' These are similar to their counterparts in \code{base}, except a tolerance
-#' \code{fpCompare.tolerance} can be specified via \code{options} to account
+#' These are similar to their counterparts in `base`, except a tolerance
+#' `fpCompare.tolerance` can be specified via `options` to account
 #' for floating point rounding errors:
 #'
 #' \tabular{cc}{
-#'   \code{fpCompare} \tab \code{base}\cr
+#'   `fpCompare` \tab `base`\cr
 #'   ---------------- \tab -----------\cr
-#'   \code{\%>=\%} \tab \code{>=}\cr
-#'   \code{\%>>\%} \tab \code{>}\cr
-#'   \code{\%<=\%} \tab \code{<=}\cr
-#'   \code{\%<<\%} \tab \code{<}\cr
-#'   \code{\%==\%} \tab \code{==}\cr
-#'   \code{\%!=\%} \tab \code{!=}\cr
+#'   `\%>=\%` \tab `>=`\cr
+#'   `\%>>\%` \tab `>`\cr
+#'   `\%<=\%` \tab `<=`\cr
+#'   `\%<<\%` \tab `<`\cr
+#'   `\%==\%` \tab `==`\cr
+#'   `\%!=\%` \tab `!=`\cr
 #' }
 #'
-#' Inspired by R FAQ 7.31 (\url{https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f})
-#' and this post (\url{https://stackoverflow.com/a/2769618/1380598}).
+#' Inspired by R FAQ 7.31 (<https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f>)
+#' and this post (<https://stackoverflow.com/a/2769618/1380598>).
 #'
 #' @param x Any numeric object.
 #' @param y Any numeric object.
@@ -26,7 +26,7 @@
 #' @return A logical vector indicating the result of the element by element comparison.
 #'         The elements of shorter vectors are recycled as necessary.
 #'
-#' @seealso \code{\link{all.equal}}, \code{\link{.Machine}}
+#' @seealso [all.equal()], [.Machine()]
 #'
 #' @export
 #' @docType methods

@@ -29,7 +29,7 @@ x \%!=\% y
 }
 \value{
 A logical vector indicating the result of the element by element comparison.
-        The elements of shorter vectors are recycled as necessary.
+The elements of shorter vectors are recycled as necessary.
 }
 \description{
 Binary operators which allow the comparison of values in numeric vectors.
@@ -40,14 +40,14 @@ These are similar to their counterparts in \code{base}, except a tolerance
 for floating point rounding errors:
 
 \tabular{cc}{
-  \code{fpCompare} \tab \code{base}\cr
-  ---------------- \tab -----------\cr
-  \code{\%>=\%} \tab \code{>=}\cr
-  \code{\%>>\%} \tab \code{>}\cr
-  \code{\%<=\%} \tab \code{<=}\cr
-  \code{\%<<\%} \tab \code{<}\cr
-  \code{\%==\%} \tab \code{==}\cr
-  \code{\%!=\%} \tab \code{!=}\cr
+\code{fpCompare} \tab \code{base}\cr
+---------------- \tab -----------\cr
+\verb{\\\%>=\\\%} \tab \code{>=}\cr
+\verb{\\\%>>\\\%} \tab \code{>}\cr
+\verb{\\\%<=\\\%} \tab \code{<=}\cr
+\verb{\\\%<<\\\%} \tab \code{<}\cr
+\verb{\\\%==\\\%} \tab \code{==}\cr
+\verb{\\\%!=\\\%} \tab \code{!=}\cr
 }
 
 Inspired by R FAQ 7.31 (\url{https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f})
@@ -73,7 +73,7 @@ b \%==\% a
 b \%!=\% a
 }
 \seealso{
-\code{\link{all.equal}}, \code{\link{.Machine}}
+\code{\link[=all.equal]{all.equal()}}, \code{\link[=.Machine]{.Machine()}}
 }
 \author{
 Alex Chubaty

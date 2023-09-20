@@ -32,4 +32,5 @@ License: GPL-3
 VignetteBuilder: knitr
 ByteCompile: yes
 BugReports: https://github.com/PredictiveEcology/fpCompare/issues
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
