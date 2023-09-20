@@ -2,12 +2,12 @@ Package: fpCompare
 Type: Package
 Title: Reliable Comparison of Floating Point Numbers
 URL: https://github.com/PredictiveEcology/fpCompare
-Version: 0.2.4
-Date: 2022-08-13
+Version: 0.2.5
+Date: 2023-09-20
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email="achubaty@for-cast.ca",
            role=c("aut", "cre"), comment = c(ORCID = "0000-0001-7146-8135")),
-    person(paste("Her Majesty the Queen in Right of Canada,",
+    person(paste("His Majesty the King in Right of Canada,",
                  "as represented by the Minister of Natural Resources Canada"),
            role="cph")
     )
