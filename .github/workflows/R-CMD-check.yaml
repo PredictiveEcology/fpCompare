@@ -1,10 +1,12 @@
 on:
   push:
     branches:
+      - main
       - master
       - development
   pull_request:
     branches:
+      - main
       - master
       - development
 
@@ -24,6 +26,7 @@ jobs:
           - {os: macOS-latest,   r: 'release'}
           - {os: windows-latest, r: 'devel'}
           - {os: windows-latest, r: 'release'}
+          - {os: windows-latest, r: 'oldrel'}
           - {os: windows-latest, r: '4.1'}
           - {os: windows-latest, r: '4.0'}
           - {os: windows-latest, r: '3.6'}
@@ -32,14 +35,18 @@ jobs:
           - {os: ubuntu-20.04, r: 'devel'}
           - {os: ubuntu-20.04, r: 'release'}
           - {os: ubuntu-20.04, r: 'oldrel'}
+          - {os: ubuntu-20.04, r: '4.1'}
           - {os: ubuntu-20.04, r: '4.0'}
+          - {os: ubuntu-20.04, r: '3.6'}
+          - {os: ubuntu-20.04, r: '3.5'}
+          - {os: ubuntu-20.04, r: '3.4'}
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: r-lib/actions/setup-pandoc@v2
 
