@@ -2,8 +2,8 @@ Package: fpCompare
 Type: Package
 Title: Reliable Comparison of Floating Point Numbers
 URL: https://github.com/PredictiveEcology/fpCompare
-Version: 0.2.5
-Date: 2023-09-20
+Version: 0.2.5.9000
+Date: 2024-01-31
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email="achubaty@for-cast.ca",
            role=c("aut", "cre"), comment = c(ORCID = "0000-0001-7146-8135")),
@@ -20,7 +20,7 @@ Description: Comparisons of floating point numbers are problematic due to errors
     This package provides new relational operators useful for performing
     floating point number comparisons with a set tolerance.
 Depends:
-    R (>= 3.5)
+    R (>= 3.6)
 Suggests:
     covr,
     knitr,
