@@ -1,10 +1,12 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^\.lintr$
 ^cran-comments\.md$
 ^docs$
-^LICENSE$
 ^_pkgdown\.yml$
 ^revdep$
 ^\.github$
 ^codecov\.yml$
+^\.claude$
+^\.DS_Store$
+^air\.toml$
+^LICENSE\.md$
