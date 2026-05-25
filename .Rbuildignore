@@ -10,3 +10,4 @@
 ^\.DS_Store$
 ^air\.toml$
 ^LICENSE\.md$
+^CRAN-SUBMISSION$
