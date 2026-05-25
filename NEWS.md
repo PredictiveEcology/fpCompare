@@ -2,7 +2,10 @@ Known issues: <https://github.com/PredictiveEcology/fpCompare/issues>
 
 # fpCompare v0.2.5.9000
 
+* minimum R version raised to 4.1 to match current dependency requirements
 * drop support for R 3.5 due to updates in dependency packages
+* relational operators now fall back to the default tolerance (`sqrt(.Machine$double.eps)`) if `options(fpCompare.tolerance)` is unset
+* package infrastructure modernized (testthat 3 edition, pkgdown 2, refreshed GitHub Actions workflows)
 
 # fpCompare v0.2.5
 
