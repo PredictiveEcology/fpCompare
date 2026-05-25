@@ -1,0 +1,13 @@
+year <- sub("-.*", "", meta$Date %||% format(Sys.Date(), "%Y-%m-%d"))
+note <- sprintf("R package version %s", meta$Version)
+
+bibentry(
+  bibtype = "Manual",
+  title = "{fpCompare}: Reliable Comparison of Floating Point Numbers",
+  author = person(c("Alex", "M"), "Chubaty",
+                  email = "achubaty@for-cast.ca",
+                  comment = c(ORCID = "0000-0001-7146-8135")),
+  year = year,
+  note = note,
+  url = "https://fpcompare.predictiveecology.org"
+)
