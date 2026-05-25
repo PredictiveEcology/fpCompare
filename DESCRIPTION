@@ -1,7 +1,7 @@
 Package: fpCompare
 Type: Package
 Title: Reliable Comparison of Floating Point Numbers
-Version: 0.2.5.9000
+Version: 0.2.6
 Authors@R: c(
     person(c("Alex", "M"), "Chubaty", email = "achubaty@for-cast.ca",
            role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7146-8135")),

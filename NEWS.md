@@ -1,6 +1,6 @@
 Known issues: <https://github.com/PredictiveEcology/fpCompare/issues>
 
-# fpCompare v0.2.5.9000
+# fpCompare v0.2.6
 
 * minimum R version raised to 4.1 to match current dependency requirements
 * drop support for R 3.5 due to updates in dependency packages
