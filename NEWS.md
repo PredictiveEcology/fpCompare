@@ -1,3 +1,5 @@
+# fpCompare (development version)
+
 Known issues: <https://github.com/PredictiveEcology/fpCompare/issues>
 
 # fpCompare v0.2.6
