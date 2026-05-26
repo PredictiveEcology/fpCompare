@@ -11,7 +11,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/PredictiveEcology/fpCompare/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/PredictiveEcology/fpCompare/blob/v0.2.6/inst/CITATION)
 
 Chubaty AM (2026). *fpCompare: Reliable Comparison of Floating Point
 Numbers*. R package version 0.2.6,
