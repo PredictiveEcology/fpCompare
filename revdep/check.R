@@ -1,18 +1,24 @@
-if (packageVersion("devtools") < "2.0.1") {
-  library("devtools")
+## See <https://github.com/r-lib/revdepcheck> for full documentation.
 
-  revdep_check(env_vars = c(DISPLAY = ":0"))
-  revdep_check_save_summary()
-  revdep_check_print_problems()
-} else {
-  #devtools::install_github("r-lib/revdepcheck")
-  library("revdepcheck")
+library(revdepcheck)
 
-  revdep_reset()
-  revdepcheck::revdep_check(num_workers = getOption("Ncpus", 4), timeout = 30*60) ## 30 mins
-  revdep_report_cran() ## update cran-comments with this output
+## Force CRAN as the only source so non-CRAN packages (e.g. r-universe
+## builds of our own packages) don't get pulled into the revdep set.
+options(repos = c(CRAN = "https://cloud.r-project.org"))
 
-  ### email maintainers of revdep packages (need to edit: `revdep/email.yml`)
-  #revdep_email(type = "broken") ## will send via gmail
-  #revdep_email(type = "failed") ## will send via gmail
-}
+## Run the check; resumes automatically if interrupted.
+revdep_check(num_workers = max(1L, parallel::detectCores() - 1L))
+
+## Inspect the results:
+##   revdep_summary()
+##   revdep_details(revdep = "<package>")
+##   revdep_todo()
+##
+## Drop a revdep that should not be checked (e.g. non-CRAN):
+##   revdep_rm(packages = c("<pkg1>", "<pkg2>"))
+##
+## Start over from scratch:
+##   revdep_reset()
+
+## Regenerate revdep/ markdown reports + a paragraph for cran-comments.md:
+revdep_report_cran()
