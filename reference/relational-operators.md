@@ -68,11 +68,11 @@ Alex Chubaty
 ``` r
 x1 <- 0.5 - 0.3
 x2 <- 0.3 - 0.1
-x1 == x2 # FALSE on most machines
+x1 == x2 ## FALSE on most machines
 #> [1] FALSE
-x1 %==% x2 # TRUE everywhere
+x1 %==% x2 ## TRUE everywhere
 #> [1] TRUE
-identical(all.equal(x1, x2), TRUE) # TRUE everywhere
+identical(all.equal(x1, x2), TRUE) ## TRUE everywhere
 #> [1] TRUE
 
 set.seed(123)
